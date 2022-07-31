@@ -35,7 +35,7 @@ async def on_uswe_joined(message: types.Message):
 # delete bad words
 @dp.message_handker()
 async def filter_messages(message: types.Message):
-    if "плохие слова" in message.text:
+    if "bad words" in message.text:
         await message.delete()
 
 if __name__ == "__main__":
